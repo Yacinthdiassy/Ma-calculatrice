@@ -1,10 +1,41 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Ma calculatrice</title>
+    <meta charset="utf-8">
+    <title>Ma calculatrice</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="calculatrice.js"></script>
 </head>
 <body>
+<div class="cadre">
+    <div class="monResultat"><input type="text" readonly size="15.75" id="monResultat"></div>
+    <div class="clavier">
+        
+        <p>
+        <input type="button" class="button vert" value="7" onclick='saisir("7")'>
+        <input type="button" class="button vert" value="8" onclick='saisir("8")'>
+        <input type="button" class="button vert" value="9" onclick='saisir("9")'>
+        <input type="button" class="button orange" value="=" onclick='egal()'>
+        </p>
+        <p>
+        <input type="button" class="button vert" value="4" onclick='saisir("4")'>
+        <input type="button" class="button vert" value="5" onclick='saisir("5")'>
+        <input type="button" class="button vert" value="6" onclick='saisir("6")'>
+        <input type="button" class="button orange" value="Eff" onclick='effacer("")'>
+        </p>
+        <p>
+        <input type="button" class="button vert" value="1" onclick='saisir("1")'>
+        <input type="button" class="button vert" value="2" onclick='saisir("2")'>
+        <input type="button" class="button vert" value="3" onclick='saisir("3")'>
+        <input type="button" class="button vert" value="0" onclick='saisir("0")'>
+        </p>
+        <p>
+        <input type="button" class="button violet" value="+" onclick='saisir("+")'>
+        <input type="button" class="button violet" value="-" onclick='saisir("-")'>
+        <input type="button" class="button violet" value="x" onclick='saisir("*")'>
+        <input type="button" class="button violet" value="/" onclick='saisir("/")'>
+        </p>
+    </div>
+</div>
 
 </body>
 </html>
